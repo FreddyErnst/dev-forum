@@ -24,15 +24,15 @@ module.exports = {
 
             res.status(200).json(posts)
         }
-    },
-    deletePost: async (req, res) => {
-        const {topicId, postId} = +req.body
+     }
+    // deletePost: async (req, res) => {
+    //     const {topicId, postId} = +req.body
 
 
-        const db = req.app.get('db')
+    //     const db = req.app.get('db')
 
-        const posts = await db.posts.deletePost(topicId, postId)
-        res.status(200).json(posts)
-    }
+    //     const posts = await db.posts.deletePost(topicId, postId)
+    //     res.status(200).json(posts)
+    // }
     
 }
